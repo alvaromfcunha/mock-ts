@@ -1,0 +1,18 @@
+{
+  "name": "mock-ts",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Alvaro Cunha",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^28.1.8",
+    "ts-jest": "^28.0.8",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.2"
+  }
+}
