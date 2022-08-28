@@ -9,7 +9,8 @@ export default class BuscaProfessor {
   }
 
   get(id: number): Professor {
-    const obj = this.#service.get(id)
-    return new Professor(obj.nome, obj.horarioAtendimento, obj.periodo)
+    const professorString = this.#service.get(id);
+    const professorObj: Record<string, string> = JSON.parse(professorString);
+    return new Professor(professorObj.nome, professorObj.horarioAtendimento, professorObj.periodo);
   }
 }
